@@ -1,0 +1,49 @@
+/* ── Page background with decorative blobs ── */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8edff 0%, #f0f4ff 50%, #e8edff 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 40px 16px;
+}
+
+.register-page::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(76, 93, 249, 0.08) 0%, transparent 70%);
+}
+
+.register-page::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(100, 196, 178, 0.08) 0%, transparent 70%);
+}
+
+/* ── Card ── */
+.register-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 36px;
+}
+
+.register-card.wide {
+  max-width: 720px;
+}
